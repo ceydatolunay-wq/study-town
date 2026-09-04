@@ -14,6 +14,7 @@ position = Vector2(237, 136)
 texture = ExtResource("1_4flbx")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=2108683234]
+position = Vector2(243, 151)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1337445502]
 position = Vector2(243, 164)
