@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dgnufd4ltvtlk" path="res://studychar_walk.png" id="3_hqtel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7i2f"]
-size = Vector2(20, 4)
+size = Vector2(14, 6)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
 atlas = ExtResource("2_i3pqv")
@@ -97,19 +97,19 @@ region = Rect2(294, 0, 14, 31)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jm5j8"]
 atlas = ExtResource("3_hqtel")
-region = Rect2(1, 0, 14, 30)
+region = Rect2(2, 0, 14, 31)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7hik5"]
 atlas = ExtResource("3_hqtel")
-region = Rect2(16, 0, 14, 30)
+region = Rect2(17, 0, 14, 31)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qtqh7"]
 atlas = ExtResource("3_hqtel")
-region = Rect2(31, 0, 14, 30)
+region = Rect2(32, 0, 14, 31)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2wuci"]
 atlas = ExtResource("3_hqtel")
-region = Rect2(46, 0, 14, 30)
+region = Rect2(47, 0, 14, 31)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l7i2f"]
 animations = [{
@@ -209,11 +209,13 @@ script = ExtResource("1_onrkg")
 position = Vector2(243, 151)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1337445502]
-position = Vector2(243, 164)
+position = Vector2(54, 52)
 shape = SubResource("RectangleShape2D_l7i2f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=579623321]
 position = Vector2(54, 39)
 sprite_frames = SubResource("SpriteFrames_l7i2f")
 animation = &"walk"
-frame_progress = 0.21790822
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1294688646]
+zoom = Vector2(4, 4)
